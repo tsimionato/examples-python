@@ -17,11 +17,7 @@ pessoa6 = Pessoa("Cherry", 41, "Feminino")
 pessoa7 = Pessoa("Camila", 17, "Feminino")
 pessoa8 = Pessoa("Paulo", 30, "Masculino")
 
-pessoa1.exibir_informacoes()
-pessoa2.exibir_informacoes()
-pessoa3.exibir_informacoes()
-pessoa4.exibir_informacoes()
-pessoa5.exibir_informacoes()
-pessoa6.exibir_informacoes()
-pessoa7.exibir_informacoes()
-pessoa8.exibir_informacoes()
+pessoas = [pessoa1, pessoa2, pessoa3, pessoa4, pessoa5, pessoa6, pessoa7, pessoa8]
+
+for pessoa in pessoas:
+    pessoa.exibir_informacoes()
