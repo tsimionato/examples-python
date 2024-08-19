@@ -1,22 +1,19 @@
-from database.db import inserir_usuario, consultar_usuarios
-from database.db2 import criar_tabela, inserir_genero, consultar_genero
+
+from database.db3 import criar_tabela
+from src.database.db3 import consultar_ficha, inserir_ficha
 
 if __name__ == "__main__":
     criar_tabela()
 
-    inserir_usuario('João', 30)
-    inserir_usuario('Carla', 47)
+    inserir_ficha("Tecnologo", "Desenvolvedor")
 
-    usuarios = consultar_usuarios()
-    for usuario in usuarios:
-        print(usuario)
+    ficha = consultar_ficha()
+    for item in ficha:
+        print(item)
 
-if __name__ == "__main__":
-    criar_tabela()
+        inserir_ficha("Tecnologo", "Desenvolvedor")
+        inserir_ficha("Odontologia Pediatrica", "Dentista")
+        inserir_ficha("Engenharia de Software", "Desenvolvedor Senior")
+        inserir_ficha("Desing de Sistemas", "Chefe de Setor de Desing")
 
-    inserir_genero(1, "Masculino")
-    inserir_genero(2, "Feminino")
 
-    generos = consultar_genero()
-    for genero in generos:
-        print(genero)
