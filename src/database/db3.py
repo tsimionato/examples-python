@@ -13,9 +13,10 @@ def criar_tabela():
     conn = conectar_db()
     cursor = conn.cursor()
     cursor.execute('''
-    CREATE TABLE IF NOT EXISTS Ficha (
-        Formação TEXT NOT NULL,
-        Trabalho TEXT NOT NULL      
+    CREATE TABLE IF NOT EXISTS ficha (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        formacao TEXT NOT NULL,
+        trabalho TEXT NOT NULL      
     )
     ''')
     conn.commit()
