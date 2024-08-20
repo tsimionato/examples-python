@@ -1,18 +1,10 @@
-
-from database.db3 import criar_tabela
-from src.database.db3 import consultar_ficha, inserir_ficha
+from database.db5 import criar_tabela
+from src.database.db5 import inserir_pagamento, consultar_pagamento
 
 if __name__ == "__main__":
     criar_tabela()
+    inserir_pagamento("Dia 20")
 
-    inserir_ficha("Odontologia Pediatrica", "Dentista")
-    inserir_ficha("Engenharia de Software", "Desenvolvedor Senior")
-    inserir_ficha("Desing de Sistemas", "Chefe de Setor de Desing")
-
-    ficha = consultar_ficha()
-    for item in ficha:
+    pagamento = inserir_pagamento()
+    for item in pagamento:
         print(item)
-
-
-
-
