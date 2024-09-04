@@ -5,7 +5,7 @@ import os
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from calculadora import Calculadora
+from src.Caculadora.calculadora import Calculadora
 
 
 class TestCalculadora(unittest.TestCase):
